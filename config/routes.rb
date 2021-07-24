@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get '/posts', to: 'posts#index' 
   resources :contacts
   devise_for :users
-  root 'devise/sessions#new'
+  root 'contacts#index'
 end
